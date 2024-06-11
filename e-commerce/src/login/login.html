@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="shortcut icon" href="../../public/favicon.png" type="image/x-icon">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Log In</div>
+        <p id="authenticationError"></p>
+        <div class="content">
+          <form id="form-login" action="#" >
+            <div class="user-details">
+              <div class="input-box">
+                <span class="details">Email</span>
+                <input type="email" id="emailAuthenticate" placeholder="Enter your email" required />
+              </div>
+              <div class="input-box">
+                <span class="details">Password</span>
+                <input type="password" id="passwordAuthenticate" placeholder="Enter your password"  />
+               </div>
+              </div>
+            </div>
+            <div class="button">
+                <button id="btn"  class="glow-on-hover">LogIn</button>
+            </div>
+          </form>
+          <div class="register">
+              <p>Not a user?</p>
+            <a href="../registration/registration.html" id="register">Register now</a>
+        </div>
+        <script type="module" src="login.ts"></script>
+</body>
+</html>

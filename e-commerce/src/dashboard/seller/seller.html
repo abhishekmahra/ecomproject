@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="seller.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="header-left">
+        <h1>E-commerce (Team-3)</h1>
+      </div>
+      <div class="header-right">
+        <img class="profile-img" src="../../../public/user.png" />
+        <button id="logoutBtn">Logout</button>
+      </div>
+    </header>
+    <div class="main">
+      <div class="product-cards">
+        <!-- Product cards will be dynamically generated here -->
+      </div>
+    </div>
+
+    <footer>
+      <div class="add-product">
+        <h2>Add New Product</h2>
+        <form id="addProductForm">
+          <input
+            type="text"
+            name="productName"
+            placeholder="Product Name"
+            id="productName"
+          />
+          <input
+            type="number"
+            name="stockQuantity"
+            placeholder="Stock Quantity"
+            id="stockQuantity"
+          />
+          <input type="number" name="price" placeholder="Price" id="price" />
+          <textarea
+            name="description"
+            placeholder="Description"
+            id="description"
+          ></textarea>
+          <button type="submit" id="add-pro-btn">Add Product</button>
+          <button type="button" id="upd-btn" disabled>Update</button>
+        </form>
+      </div>
+    </footer>
+    <script type="module" src="seller.ts"></script>
+  </body>
+</html>

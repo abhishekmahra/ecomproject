@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="registration.css" />
+    <link
+      rel="shortcut icon"
+      href="../../public/favicon.png"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="title">Registration</div>
+      <div class="content">
+        <form id="form" action="#">
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Full Name</span>
+              <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                placeholder="Enter your name"
+              />
+              <div class="error" id="fullNameError"></div>
+            </div>
+            <div class="input-box">
+              <span class="details">Email</span>
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+              />
+              <div class="error" id="emailError"></div>
+            </div>
+            <div class="input-box">
+              <span class="details">Phone Number</span>
+              <input
+                type="text"
+                id="phone"
+                name="phone"
+                placeholder="Enter your number"
+              />
+              <div class="error" id="phoneError"></div>
+            </div>
+            <div class="input-box">
+              <span class="details">DOB</span>
+              <input type="date" id="date" name="date" />
+              <div class="error" id="dateError"></div>
+            </div>
+            <div class="input-box">
+              <span class="details">Password</span>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter your password"
+              />
+              <div class="error" id="passwordError"></div>
+            </div>
+            <div class="input-box">
+              <span class="details">Confirm Password</span>
+              <input
+                type="password"
+                id="password2"
+                name="password2"
+                placeholder="Confirm your password"
+              />
+              <div class="error" id="confirmPasswordError"></div>
+            </div>
+          </div>
+          <div class="gender-details">
+            <input type="radio" name="gender" id="male" value="male" />
+            <input type="radio" name="gender" id="female" value="female" />
+            <input type="radio" name="gender" id="other" value="other" />
+            <span class="gender-title">Gender</span>
+            <div class="category">
+              <label for="male">
+                <span class="dot one"></span>
+                <span class="gender">Male</span>
+              </label>
+              <label for="female">
+                <span class="dot two"></span>
+                <span class="gender">Female</span>
+              </label>
+              <label for="other">
+                <span class="dot three"></span>
+                <span class="gender">Others</span>
+              </label>
+            </div>
+            <div class="gender-error" id="gender-error"></div>
+          </div>
+
+          <div class="userType">
+            <input type="radio" name="userType" id="Buyer" value="Buyer" />
+            <input type="radio" name="userType" id="Seller" value="Seller" />
+            <span class="userType-title">User</span>
+            <div class="category">
+              <label for="Buyer">
+                <span class="dot one"></span>
+                <span class="userType Buyer">Buyer</span>
+              </label>
+              <label for="Seller">
+                <span class="dot two"></span>
+                <span class="userType Seller">Seller</span>
+              </label>
+            </div>
+            <div class="gender-error" id="user-error"></div>
+          </div>
+
+          <div class="button">
+            <button type="submit" class="glow-on-hover">Register</button>
+          </div>
+
+          <div class="register">
+            <p>Already a user?</p>
+            <a href="../login/login.html" id="login">Login</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="registration.ts" type="module"></script>
+  </body>
+</html>
